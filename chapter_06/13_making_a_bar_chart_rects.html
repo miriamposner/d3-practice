@@ -28,7 +28,9 @@
 			   .data(dataset)
 			   .enter()
 			   .append("rect")
-			   .attr("x", 0)
+			   .attr("x", function(d,i){
+			   	return i + 21;
+			   	})
 			   .attr("y", 0)
 			   .attr("width", 20)
 			   .attr("height", 100);
